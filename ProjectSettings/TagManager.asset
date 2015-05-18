@@ -18,7 +18,7 @@ TagManager:
   - Wall
   - Enemy
   - CheckPoint
-  - 
+  - PickUp
   - 
   - 
   - 
@@ -40,4 +40,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: CheckPoints layer
+    uniqueID: 470851871
+    locked: 0
+  - name: Interactables Layer
+    uniqueID: 163007835
+    locked: 0
+  - name: Pickups Layer
+    uniqueID: 2234390643
+    locked: 0
+  - name: Wall Layer
+    uniqueID: 802578673
+    locked: 0
+  - name: Ground Layer
+    uniqueID: 4031946701
+    locked: 0
+  - name: Floating blocks Layer
+    uniqueID: 2078594405
+    locked: 0
+  - name: Enemy Layer
+    uniqueID: 1754035469
+    locked: 0
+  - name: Player Layer
+    uniqueID: 193288431
     locked: 0

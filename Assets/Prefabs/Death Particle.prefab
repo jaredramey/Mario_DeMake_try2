@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 406080}
   - 198: {fileID: 19839488}
   - 199: {fileID: 19918730}
+  - 114: {fileID: 11413210}
   m_Layer: 0
   m_Name: Death Particle
   m_TagString: Untagged
@@ -29,6 +30,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11413210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e083352b75b21d9439fe98e25a269102, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &19839488
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private bool grounded;
     private bool doubleJumped;
 
+    private float moveVelocity;
+
 
     //For animation
     private Animator anim;
@@ -59,16 +61,31 @@ public class PlayerController : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
             doubleJumped = true;
         }
+
+        //Move velocity reset to 0 for no sliding
+        moveVelocity = 0f;
+
         //Move Left
         if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //old code
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+            //new code
+            moveVelocity = -moveSpeed;
+
         }
         //Move Right
         if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            //old code
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+
+            //new code
+            moveVelocity = moveSpeed;
         }
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
 
         //Mathf.Abs will take a value and return absolute value
