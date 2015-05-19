@@ -10,7 +10,7 @@ public class HealthManager : MonoBehaviour
     //Current Player Life Total
     public static int lifeTotal;
 
-    LevelManager levelManager;
+    private LevelManager levelManager;
 
     //Text to write to score
     Text myText;
@@ -37,6 +37,7 @@ public class HealthManager : MonoBehaviour
         if(lifeTotal <= 0)
         {
             //Return the player to the world map
+            lifeTotal = 0;
         }
 
         myText.text = "" + lifeTotal;
@@ -45,11 +46,12 @@ public class HealthManager : MonoBehaviour
     public static void HurtPlayer(int damageToGive)
     {
         lifeTotal -= damageToGive;
-        
     }
 
     public void FullHealth()
     {
         lifeTotal = 3;
     }
+
+   
 }

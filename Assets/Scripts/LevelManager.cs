@@ -44,7 +44,6 @@ public class LevelManager : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //Delay between death and respawn
         yield return new WaitForSeconds(respawnDelay);
-
         //Tell the log that the player has died
         Debug.Log("Player Respawned");
         //Move the player
