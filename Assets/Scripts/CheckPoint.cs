@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class CheckPoint : MonoBehaviour
 {
     public LevelManager levelManager;
+	public SaveLoadManager SaveTest;
 
     // Use this for initialization
     void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>();
+        levelManager = FindObjectOfType<LevelManager> ();
     }
 
     // Update is called once per frame
@@ -23,6 +25,8 @@ public class CheckPoint : MonoBehaviour
         {
             levelManager.currentCheckpoint = gameObject;
             //Debug.Log("Activated Checkpoint " + transform.position);
+		
         }
+
     }
 }
