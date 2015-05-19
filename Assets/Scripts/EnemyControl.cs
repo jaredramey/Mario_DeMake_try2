@@ -23,6 +23,8 @@ public class EnemyControl : MonoBehaviour
     public Transform playerCheck;
     public LayerMask whatIsPlayer;
 
+    public int pointsOnDeath;
+
     // Use this for initialization
     void Start()
     {
@@ -69,6 +71,7 @@ public class EnemyControl : MonoBehaviour
         if (playerOnTop)
         {
             Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);
+            ScoreManager.AddCoins(pointsOnDeath);
             Destroy(gameObject);
             return;
         }
