@@ -20,6 +20,14 @@ public class DestroyFinishedParticle : MonoBehaviour
             return;
         }
 
+        //If a particcle System is not playing anymore then destroy it
         Destroy(gameObject);
     }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+
+    }
 }
+
