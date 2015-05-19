@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 094da624dabf71c46902b2ac41c1615e
-timeCreated: 1431455408
+timeCreated: 1431993039
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -64,19 +64,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 415
+        y: 414
         width: 71
-        height: 97
+        height: 98
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 2, z: 0, w: 0}
     - name: Player_Walk_1
       rect:
         serializedVersion: 2
         x: 71
-        y: 415
+        y: 416
         width: 73
-        height: 97
+        height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -89,57 +89,57 @@ TextureImporter:
         height: 97
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 1, z: 0, w: 0}
     - name: Player_Walk_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 319
+        x: 1
+        y: 321
         width: 71
-        height: 96
+        height: 93
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Player_Walk_4
       rect:
         serializedVersion: 2
-        x: 71
+        x: 73
         y: 319
-        width: 73
-        height: 96
+        width: 71
+        height: 95
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 0, w: 0}
     - name: Player_Walk_5
       rect:
         serializedVersion: 2
         x: 144
-        y: 319
+        y: 320
         width: 75
         height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 1, z: 0, w: 2}
     - name: Player_Walk_8
       rect:
         serializedVersion: 2
         x: 144
         y: 222
-        width: 75
+        width: 71
         height: 97
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 0, z: 0, w: 0}
     - name: Player_Walk_7
       rect:
         serializedVersion: 2
         x: 74
         y: 222
         width: 70
-        height: 97
+        height: 96
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 1, w: 0}
     - name: Player_Walk_6
       rect:
         serializedVersion: 2
@@ -149,7 +149,7 @@ TextureImporter:
         height: 97
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
     - name: Player_Walk_9
       rect:
         serializedVersion: 2

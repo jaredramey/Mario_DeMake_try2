@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
 
     private float moveVelocity;
 
+    
+
 
     //For animation
     private Animator anim;
