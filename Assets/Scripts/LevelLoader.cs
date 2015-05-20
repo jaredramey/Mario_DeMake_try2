@@ -7,16 +7,19 @@ public class LevelLoader : MonoBehaviour
 
     public string levelToLoad;
 
+    public bool levelAccessible;
+
     // Use this for initialization
     void Start()
     {
         playerInZone = false;
+        levelAccessible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W) && playerInZone == true)
+        if(Input.GetKeyDown(KeyCode.W) && playerInZone == true && levelAccessible == true)
         {
             Application.LoadLevel(levelToLoad);
         }
