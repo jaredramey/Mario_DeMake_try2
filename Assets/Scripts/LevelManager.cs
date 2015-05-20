@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -44,7 +44,6 @@ public class LevelManager : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //Delay between death and respawn
         yield return new WaitForSeconds(respawnDelay);
-
         //Tell the log that the player has died
         Debug.Log("Player Respawned");
         //Move the player

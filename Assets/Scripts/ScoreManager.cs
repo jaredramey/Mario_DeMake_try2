@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
 {
     //Player score throuought the game
     public static int score;
+    public int playerScore; 
 
     //Text to write to score
     Text myText;
@@ -29,6 +30,7 @@ public class ScoreManager : MonoBehaviour
 
         //Display score
         myText.text = "" + score;
+        playerScore = score;
     }
 
     public static void AddCoins(int pointsToAdd)
