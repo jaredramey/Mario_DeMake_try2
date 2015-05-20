@@ -9,7 +9,6 @@ public class SignTestScript : MonoBehaviour
     void Start()
     {
         //set the sign text
-        signText.text = "Level 1";
     }
 
     // Update is called once per frame

@@ -4,7 +4,6 @@ using System.Collections;
 public class LevelLoader : MonoBehaviour
 {
     private bool playerInZone;
-
     public string levelToLoad;
 
     // Use this for initialization
@@ -28,7 +27,7 @@ public class LevelLoader : MonoBehaviour
         {
             playerInZone = true;
         }
-
+        
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -37,6 +36,5 @@ public class LevelLoader : MonoBehaviour
         {
             playerInZone = false;
         }
-
     }
 }

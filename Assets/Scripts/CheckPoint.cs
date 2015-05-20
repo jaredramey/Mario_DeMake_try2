@@ -5,7 +5,6 @@ using System.IO;
 public class CheckPoint : MonoBehaviour
 {
     public LevelManager levelManager;
-	public SaveLoadManager SaveTest;
 
     // Use this for initialization
     void Start()
