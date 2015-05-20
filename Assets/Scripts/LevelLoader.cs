@@ -5,11 +5,13 @@ public class LevelLoader : MonoBehaviour
 {
     private bool playerInZone;
     public string levelToLoad;
+    SaveLoadManager sLManager; 
 
     // Use this for initialization
     void Start()
     {
         playerInZone = false;
+        sLManager = FindObjectOfType<SaveLoadManager>();
     }
 
     // Update is called once per frame
