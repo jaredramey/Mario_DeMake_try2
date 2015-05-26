@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Levels/LevelSelector.unity
   - enabled: 1
     path: Assets/Levels/Level_1.unity
+  - enabled: 1
+    path: Assets/Levels/Level_Two.unity
