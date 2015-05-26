@@ -10,9 +10,6 @@ public class LevelManager : MonoBehaviour
     public GameObject DeathParticle;
     public GameObject RespawnParticle;
 
-    public bool levelOneComplete = false;
-    public bool levelTwoComplete = false;
-
     public float respawnDelay;
 
     private float gravityStore;
