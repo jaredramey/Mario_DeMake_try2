@@ -14,6 +14,11 @@ public class LevelLoader : MonoBehaviour
     {
         playerInZone = false;
         levelAccessible = false;
+
+        if (gameObject.name == "Finish Flag" || gameObject.name == "Level One")
+        {
+            levelAccessible = true;
+        }
     }
 
     // Update is called once per frame
