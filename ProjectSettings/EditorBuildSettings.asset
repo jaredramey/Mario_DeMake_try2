@@ -11,3 +11,11 @@ EditorBuildSettings:
     path: Assets/Levels/Level_1.unity
   - enabled: 1
     path: Assets/Levels/Level_Two.unity
+  - enabled: 1
+    path: Assets/Levels/MainMenu.unity
+  - enabled: 1
+    path: Assets/Levels/Quit.unity
+  - enabled: 1
+    path: Assets/Levels/SaveLoadSelector.unity
+  - enabled: 1
+    path: Assets/Levels/Level_One.unity

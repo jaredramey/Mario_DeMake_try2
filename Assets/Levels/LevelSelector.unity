@@ -1978,11 +1978,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11461050, guid: 03177d30b21fbed4db303e4de3021f55, type: 2}
       propertyPath: levelAccessible
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 177026, guid: 03177d30b21fbed4db303e4de3021f55, type: 2}
       propertyPath: m_Name
-      value: Level One 1
+      value: Level Two
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03177d30b21fbed4db303e4de3021f55, type: 2}

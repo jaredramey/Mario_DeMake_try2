@@ -27737,6 +27737,10 @@ Prefab:
       propertyPath: levelToLoad
       value: LevelSelector
       objectReference: {fileID: 0}
+    - target: {fileID: 11461050, guid: 03177d30b21fbed4db303e4de3021f55, type: 2}
+      propertyPath: levelAccessible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03177d30b21fbed4db303e4de3021f55, type: 2}
   m_IsPrefabParent: 0
