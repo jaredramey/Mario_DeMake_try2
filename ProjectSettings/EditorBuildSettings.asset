@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/Levels/Level_1.unity
   - enabled: 1
     path: Assets/Levels/Level_Two.unity
+  - enabled: 1
+    path: Assets/Levels/Level_Three.unity
+  - enabled: 1
+    path: Assets/Levels/Boss.unity
