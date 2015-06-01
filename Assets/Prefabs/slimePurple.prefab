@@ -42,9 +42,9 @@ GameObject:
   - 50: {fileID: 5072638}
   - 58: {fileID: 5815616}
   - 61: {fileID: 6132242}
-  - 114: {fileID: 11411694}
   - 114: {fileID: 11406720}
   - 95: {fileID: 9534986}
+  - 114: {fileID: 11452792}
   m_Layer: 11
   m_Name: slimePurple
   m_TagString: Untagged
@@ -205,7 +205,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   pointsOnDeath: 0
---- !u!114 &11411694
+--- !u!114 &11452792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -213,10 +213,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 181532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb8547d2604438b48838a11c3b69feac, type: 3}
+  m_Script: {fileID: 11500000, guid: 83d3956805c434f43b9ad3eaa0a83768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
+  damageToGive: 1
 --- !u!212 &21253604
 SpriteRenderer:
   m_ObjectHideFlags: 1
