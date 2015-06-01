@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Availability : MonoBehaviour {
-    SaveLoadManager saveLoadManager;
+
     public int availableLevels;
 
 
@@ -10,7 +10,7 @@ public class Availability : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        saveLoadManager = FindObjectOfType<SaveLoadManager>();
+        //saveLoadManager = FindObjectOfType<SaveLoadManager>();
 	}
 	
 	// Update is called once per frame
