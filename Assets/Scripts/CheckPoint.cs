@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class CheckPoint : MonoBehaviour
 {
     public LevelManager levelManager;
+
+    public GameObject lastLevel;
 
     // Use this for initialization
     void Start()
@@ -24,5 +27,10 @@ public class CheckPoint : MonoBehaviour
             levelManager.currentCheckpoint = gameObject;
             //Debug.Log("Activated Checkpoint " + transform.position);
         }
+    }
+
+    public void GetPreviousLevel(GameObject other)
+    {
+        lastLevel.name = other.name;
     }
 }
