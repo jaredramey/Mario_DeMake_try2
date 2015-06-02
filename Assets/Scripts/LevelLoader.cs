@@ -23,11 +23,30 @@ public class LevelLoader : MonoBehaviour
         //if player has reached level two make level Two available
         if (gameObject.name == "Level Two")
         {
-            //Debug.Log("Level two script started. Levels complete = " + PlayerPrefs.GetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot.ToString()));
-            //SaveLoadManager.currentLevel = PlayerPrefs.GetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot.ToString());
-			//Debug.Log("currentLevel: " + SaveLoadManager.currentLevel);
 
             if (SaveLoadManager.currentLevel >= 1)
+            {
+
+                levelAccessible = true;
+                Debug.Log("Level Two Accessible");
+            }
+        }
+
+        if (gameObject.name == "Level Three")
+        {
+
+            if (SaveLoadManager.currentLevel >= 2)
+            {
+
+                levelAccessible = true;
+                Debug.Log("Level Two Accessible");
+            }
+        }
+
+        if (gameObject.name == "Boss")
+        {
+
+            if (SaveLoadManager.currentLevel >= 3)
             {
 
                 levelAccessible = true;
