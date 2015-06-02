@@ -6813,22 +6813,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 60030d0294241614cb31a4febf19ac80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1900438886
-GameObject:
-  m_PrefabParentObject: {fileID: 104424, guid: 4afb635169ac6c149974f5ad60e0e4c8, type: 2}
-  m_PrefabInternal: {fileID: 1336169011}
---- !u!114 &1900438887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1900438886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d3956805c434f43b9ad3eaa0a83768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageToGive: 1
 --- !u!1 &1905136454
 GameObject:
   m_ObjectHideFlags: 0
