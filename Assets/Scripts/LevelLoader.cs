@@ -72,6 +72,7 @@ public class LevelLoader : MonoBehaviour
     }
     void ChangeLevelAvailability()
     {
+		//--checking if current level needs to be increased--
         //if loaded level is level one
         if(Application.loadedLevelName == "Level_1")
         {
@@ -84,6 +85,10 @@ public class LevelLoader : MonoBehaviour
                 Debug.Log("saved level: " + SaveLoadManager.currentLevel);
             }
         }
+		//-\-checking if current level needs to be increased-\-
+
+
+		//--changing levels accessiblitly based on currentLevel--
         if (gameObject.name == "Level Two" && SaveLoadManager.currentLevel >= 1)
         {
             levelAccessible = true;
@@ -98,6 +103,9 @@ public class LevelLoader : MonoBehaviour
         {
             levelAccessible = true;
         }
+		//-\-changing levels accessiblitly based on currentLevel-\-
+
+
     }
 
 }
