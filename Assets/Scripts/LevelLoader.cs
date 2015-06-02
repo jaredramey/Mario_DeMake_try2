@@ -82,15 +82,21 @@ public class LevelLoader : MonoBehaviour
                 SaveLoadManager.currentLevel++;
                 PlayerPrefs.SetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot.ToString(), SaveLoadManager.currentLevel);
                 Debug.Log("saved level: " + SaveLoadManager.currentLevel);
-               
-               
-               //Debug.Log("" + PlayerPrefs.GetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot));
             }
         }
         if (gameObject.name == "Level Two" && SaveLoadManager.currentLevel >= 1)
         {
             levelAccessible = true;
-            Debug.Log("Level Two Accessible From Change level availability");
+        }
+
+        if (gameObject.name == "Level Three" && SaveLoadManager.currentLevel >= 2)
+        {
+            levelAccessible = true;
+        }
+
+        if (gameObject.name == "Boss" && SaveLoadManager.currentLevel >= 3)
+        {
+            levelAccessible = true;
         }
     }
 
