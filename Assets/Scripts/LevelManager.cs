@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
     void Update()
     {
         player = FindObjectOfType<PlayerController>();
+
+        
     }
 
     public void RespawnPlayer()

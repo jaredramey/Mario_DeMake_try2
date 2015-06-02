@@ -38,6 +38,8 @@ public class HealthManager : MonoBehaviour
         {
             //Return the player to the world map
             lifeTotal = 0;
+
+            Application.LoadLevel("LevelSelector");
         }
 
         myText.text = "" + lifeTotal;
