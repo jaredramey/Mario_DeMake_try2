@@ -11,7 +11,7 @@ GameObject:
   - 198: {fileID: 19892550}
   - 199: {fileID: 19969346}
   - 114: {fileID: 11499380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Respawn Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,7 +1111,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 193288431
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: .5

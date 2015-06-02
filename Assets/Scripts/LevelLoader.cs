@@ -15,7 +15,7 @@ public class LevelLoader : MonoBehaviour
         levelAccessible = true;
         //make all levels available except Two, three, or boss Level
         //this is so all other doors are automatically available i.e. WM, MainMenu, Quit, etc.
-        if (gameObject.name == "Level Two")
+        if (gameObject.name == "Level Two" || gameObject.name == "Level Three" || gameObject.name == "Boss")
         {
             levelAccessible = false;
         }
@@ -72,22 +72,6 @@ public class LevelLoader : MonoBehaviour
     }
     void ChangeLevelAvailability()
     {
-		//--checking if current level needs to be increased--
-        //if loaded level is level one
-        if(Application.loadedLevelName == "Level_1")
-        {
-            //if player makes it back without dying (lifeTotal > 0)
-            //if he hasnt already beaten this level increase the finished levels
-            if (HealthManager.lifeTotal > 0 && PlayerPrefs.GetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot.ToString()) < 2)
-            {
-                SaveLoadManager.currentLevel++;
-                PlayerPrefs.SetInt("currentLevel_Slot_" + SaveLoadManager.playerSlot.ToString(), SaveLoadManager.currentLevel);
-                Debug.Log("saved level: " + SaveLoadManager.currentLevel);
-            }
-        }
-		//-\-checking if current level needs to be increased-\-
-
-
 		//--changing levels accessiblitly based on currentLevel--
         if (gameObject.name == "Level Two" && SaveLoadManager.currentLevel >= 1)
         {

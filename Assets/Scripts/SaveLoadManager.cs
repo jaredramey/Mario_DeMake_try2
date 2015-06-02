@@ -15,9 +15,9 @@ public class SaveLoadManager : MonoBehaviour
     void Start()
     {
         //setting all values to be saved with PlayerPrefs
-        PlayerPrefs.SetInt("LevelOneHighScore", 0);
-        PlayerPrefs.SetInt("LevelTwoHighScore", 0);
-        PlayerPrefs.SetInt("LevelThreeHighScore", 0);
+        //PlayerPrefs.SetInt("LevelOneHighScore", 0);
+        //PlayerPrefs.SetInt("LevelTwoHighScore", 0);
+        //PlayerPrefs.SetInt("LevelThreeHighScore", 0);
     }
 
     // Update is called once per frame
