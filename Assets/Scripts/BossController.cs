@@ -22,6 +22,7 @@ public class BossController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //get the animator for the boss
         anim = GetComponent<Animator>();
     }
 
@@ -34,7 +35,10 @@ public class BossController : MonoBehaviour
         //checking for player
         playerOnTop = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
 
+        //Move
         Movement();
+
+        //check and see if death is needed
         KillEnemy();
     }
 
@@ -61,13 +65,14 @@ public class BossController : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveRight = true;
         }
-
+        //check if the player is on the left of the boss
         else if (gameObject.transform.position.x >= player.transform.position.x)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
             moveRight = false;
         }
 
+        //Move left or right
         if (moveRight)
         {
             transform.localScale = new Vector3(-4.6f, 4f, 1f);
@@ -76,33 +81,18 @@ public class BossController : MonoBehaviour
         {
             transform.localScale = new Vector3(4.6f, 4f, 1f);
         }
-
-        //Regular Enemy Movement
-        //if (!atEdge)
-        //{
-        //    moveRight = !moveRight;
-        //}
-        //if (moveRight)
-        //{
-        //    transform.localScale = new Vector3(-1f, 1f, 1f);
-        //    GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        //}
-        //else
-        //{
-        //    transform.localScale = new Vector3(1f, 1f, 1f);
-        //    GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        //}
     }
 
     void KillEnemy()
     {
+        //check if tthe boss is dead
         if (playerOnTop && health <= 0)
         {
             Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
             return;
         }
-
+        //else push the player up
         else if(playerOnTop)
         {
             health = health - 1;

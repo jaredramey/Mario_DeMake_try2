@@ -31,6 +31,7 @@ public class CheckPoint : MonoBehaviour
 
     public void GetPreviousLevel(GameObject other)
     {
+        //Get last level
         lastLevel.name = other.name;
     }
 }

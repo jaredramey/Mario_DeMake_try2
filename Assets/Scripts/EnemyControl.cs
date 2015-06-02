@@ -49,11 +49,13 @@ public class EnemyControl : MonoBehaviour
 
     void EnemyMovement()
     {
+        //Move right or left
         if (hittingWall || !atEdge)
         {
             moveRight = !moveRight;
         }
 
+        //animate correctly depending
         if (moveRight)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -68,6 +70,7 @@ public class EnemyControl : MonoBehaviour
 
     void KillEnemy()
     {
+        //check and see if player has killed the enemy
         if (playerOnTop)
         {
             Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);

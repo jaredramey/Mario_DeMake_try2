@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ *UPDATE:
+ *CODE IS NOT BEING USED
+ */
+
 public class BossHealthBar : MonoBehaviour
 {
     /*Code created by watermy: http://answers.unity3d.com/questions/306447/c-health-bar.html */

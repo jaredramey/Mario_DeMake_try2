@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     //For physics stuff dealing with player
     void FixedUpdate()
     {
+        //Check for the ground
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
 
@@ -67,9 +68,6 @@ public class PlayerController : MonoBehaviour
         //Move Left
         if (Input.GetKey(KeyCode.A))
         {
-            //old code
-            //GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-
             //new code
             moveVelocity = -moveSpeed;
 
