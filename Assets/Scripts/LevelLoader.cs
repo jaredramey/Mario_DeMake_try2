@@ -40,7 +40,7 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       //If the player wants to quit then exit the game
         if (Input.GetKeyDown(KeyCode.W) && playerInZone == true && levelAccessible == true)
         {
             if(levelToLoad == "Quit")
@@ -55,6 +55,7 @@ public class LevelLoader : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        //make sure player is in the are
         if(other.name == "Player")
         {
             playerInZone = true;
@@ -64,12 +65,15 @@ public class LevelLoader : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
+        //check if the player has left the zone
         if (other.name == "Player")
         {
             playerInZone = false;
         }
 
     }
+
+    //Check to see if levels are avaliable
     void ChangeLevelAvailability()
     {
         //if loaded level is level one

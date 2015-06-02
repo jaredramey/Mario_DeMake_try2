@@ -7,6 +7,7 @@ public class BossHealthText : MonoBehaviour
     //Boss health
     public static int curHealth;
 
+    //Get the level manager
     private LevelManager levelManager;
 
     //Text to write health to
@@ -28,6 +29,7 @@ public class BossHealthText : MonoBehaviour
         //Get life total and display it
         curHealth = FindObjectOfType<BossController>().health;
 
+        //update text on screen
         myText.text = "" + curHealth;
     }
 }

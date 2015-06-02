@@ -30,6 +30,7 @@ public class ScoreManager : MonoBehaviour
 
         //Display score
         myText.text = "" + score;
+        //update player score
         playerScore = score;
     }
 

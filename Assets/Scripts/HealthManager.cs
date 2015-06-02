@@ -38,18 +38,21 @@ public class HealthManager : MonoBehaviour
         {
             //Return the player to the world map
             lifeTotal = 0;
-
+            //load back into world menu
             Application.LoadLevel("LevelSelector");
         }
 
+        //update text on screen
         myText.text = "" + lifeTotal;
     }
 
     public static void HurtPlayer(int damageToGive)
     {
+        //update player life total
         lifeTotal -= damageToGive;
     }
 
+    //function to reset life if needed
     public void FullHealth()
     {
         lifeTotal = 3;

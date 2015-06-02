@@ -5,17 +5,16 @@ public class Availability : MonoBehaviour {
 
     public int availableLevels;
 
-
-
 	// Use this for initialization
 	void Start ()
     {
-        //saveLoadManager = FindObjectOfType<SaveLoadManager>();
+        
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
+        //Get the current level
         availableLevels = PlayerPrefs.GetInt("currentLevel");
         UpdateLevelAccess();
 	}
