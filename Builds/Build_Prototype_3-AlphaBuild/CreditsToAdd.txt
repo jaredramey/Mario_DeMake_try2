@@ -1,0 +1,26 @@
+Credit for Assets used in this game:
+
+	Art:
+	- Kenny (all art assets)
+
+	Music:
+	- (Need To Ask Navarre about this) (Background Music)
+
+	Code Sources:
+	- Big thank you to GamesPlusJames for his youtube tutorial series
+	  helped get the project started and moving (source: https://www.youtube.com/watch?v=Wrelb5WBnoQ)
+
+	- Watermy for code on health bar, even if it wasn't used in the end
+	  (source: http://answers.unity3d.com/questions/306447/c-health-bar.html)
+
+	- 3DBuzz for code on smooth camera movement tutorial
+	  (source: https://www.youtube.com/watch?v=u67fbxe8xxY)
+
+
+
+
+	||=================================================================||
+	||			THESE CREDITS WILL BE ADDED		   ||
+	||			TO THE GAME IN THE NEXT BUILD		   ||
+	||								   ||
+	||=================================================================||
