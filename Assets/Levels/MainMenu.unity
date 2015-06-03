@@ -1950,6 +1950,14 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10248590, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_FontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 487944, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.588
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
   m_IsPrefabParent: 0
@@ -4767,6 +4775,18 @@ Prefab:
       propertyPath: Text
       value: Load Game
       objectReference: {fileID: 0}
+    - target: {fileID: 10248590, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_FontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 487944, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.119999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 487944, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .319999993
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
   m_IsPrefabParent: 0
@@ -6192,6 +6212,18 @@ Prefab:
     - target: {fileID: 11412436, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
       propertyPath: Text
       value: Quit Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 487944, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.519999981
+      objectReference: {fileID: 0}
+    - target: {fileID: 487944, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .319999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 10248590, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
+      propertyPath: m_FontSize
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c4400688c7d4e44c88e5764a4dc58aa, type: 2}
