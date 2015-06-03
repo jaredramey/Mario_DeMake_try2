@@ -4,7 +4,8 @@ Credit for Assets used in this game:
 	- Kenny (all art assets)
 
 	Music:
-	- (Need To Ask Navarre about this) (Background Music)
+	- Spiff Tune (Background Music & etc. sounds not used yet)
+	  (source: https://soundcloud.com/spifftune)
 
 	Code Sources:
 	- Big thank you to GamesPlusJames for his youtube tutorial series
