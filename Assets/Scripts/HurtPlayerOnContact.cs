@@ -6,7 +6,7 @@ public class HurtPlayerOnContact : MonoBehaviour
     //Set value for how hurt the player will be
     public int damageToGive;
 
-
+    //get the level manager
     private LevelManager levelManager;
 
     // Use this for initialization
@@ -25,7 +25,9 @@ public class HurtPlayerOnContact : MonoBehaviour
     {
         if (other.name == "Player")
         {
+            //hurt player and update the life total
             HealthManager.HurtPlayer(damageToGive);
+            //respawn the player
             levelManager.RespawnPlayer();
         }
     }

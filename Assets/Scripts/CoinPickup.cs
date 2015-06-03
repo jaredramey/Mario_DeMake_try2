@@ -24,8 +24,10 @@ public class CoinPickup : MonoBehaviour
             return;
         }
 
+        //Add coin points to player score
         ScoreManager.AddCoins(pointsToAdd);
 
+        //destroy the item so it can't be picked up again
         Destroy(gameObject);
     }
 }

@@ -1,6 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * ||===============================================||
+ * ||                                               ||
+ * ||       THIS SCRIPT IS NOT BEING USED           ||
+ * ||       DID NOT WORK AND WAS SCRAPPED           ||
+ * ||                                               ||
+ * ||===============================================||
+ */
+
+
+
 public class WaterController : MonoBehaviour
 {
 

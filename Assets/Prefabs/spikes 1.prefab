@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 405028}
   - 212: {fileID: 21260092}
   - 61: {fileID: 6113408}
-  - 114: {fileID: 11462092}
+  - 114: {fileID: 11455666}
   m_Layer: 11
   m_Name: spikes 1
   m_TagString: Untagged
@@ -43,7 +43,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .699999988, y: .349999994}
---- !u!114 &11462092
+--- !u!114 &11455666
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,10 +51,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 104424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb8547d2604438b48838a11c3b69feac, type: 3}
+  m_Script: {fileID: 11500000, guid: 83d3956805c434f43b9ad3eaa0a83768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
+  damageToGive: 1
 --- !u!212 &21260092
 SpriteRenderer:
   m_ObjectHideFlags: 1

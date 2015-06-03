@@ -22,14 +22,18 @@ public class ItemSpawner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //get the animator
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //check if the player is hitting
         playerHitting = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
+        //update the animator
         animator.SetBool("itemIsSpawned", itemIsSpawned);
+        //spawn the item
         SpawnItem();
     }
 
@@ -37,7 +41,9 @@ public class ItemSpawner : MonoBehaviour
     {
         if(playerHitting && itemIsSpawned == false)
         {
+            //create the item above the block
             Instantiate(itemToSpawn, (gameObject.transform.position + new Vector3(0f, 1f, 0f)), gameObject.transform.rotation);
+            //make it so no other items can spawn out of the block
             itemIsSpawned = true;
         }
     }

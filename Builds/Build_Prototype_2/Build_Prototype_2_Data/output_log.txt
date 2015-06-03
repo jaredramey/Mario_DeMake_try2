@@ -1,0 +1,261 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6350 (ID=0x68f9)
+    Vendor:   ATI
+    VRAM:     497 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.050 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\System.Core.dll (this message is harmless)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.152766 ms
+System memory in use before: 29.2 MB.
+System memory in use after: 29.2 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 728.
+Total: 0.330224 ms (FindLiveObjects: 0.051012 ms CreateObjectMapping: 0.025959 ms MarkObjects: 0.156660 ms  DeleteObjects: 0.095686 ms)
+
+slot 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SaveLoadManager:Update() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\SaveLoadManager.cs:30)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/SaveLoadManager.cs Line: 30)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.103866 ms
+System memory in use before: 29.2 MB.
+System memory in use after: 29.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 458.
+Total: 0.235443 ms (FindLiveObjects: 0.029581 ms CreateObjectMapping: 0.025657 ms MarkObjects: 0.160584 ms  DeleteObjects: 0.018111 ms)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:31)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 31)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:42)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 42)
+
+Platform assembly: C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Builds\Build_Prototype_2\Build_Prototype_2_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.476138 ms
+System memory in use before: 30.1 MB.
+System memory in use after: 30.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2969.
+Total: 0.614567 ms (FindLiveObjects: 0.099006 ms CreateObjectMapping: 0.060370 ms MarkObjects: 0.384859 ms  DeleteObjects: 0.069727 ms)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.930483 ms
+System memory in use before: 29.3 MB.
+System memory in use after: 29.3 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 466.
+Total: 0.492921 ms (FindLiveObjects: 0.030185 ms CreateObjectMapping: 0.021431 ms MarkObjects: 0.197410 ms  DeleteObjects: 0.242687 ms)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:31)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 31)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:42)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 42)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelManager+<RespawnPlayerCo>c__Iterator0.MoveNext () [0x000c9] in C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:51 
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 51)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelManager+<RespawnPlayerCo>c__Iterator0.MoveNext () [0x000c9] in C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:51 
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.957771 ms
+System memory in use before: 30.5 MB.
+System memory in use after: 30.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 1275.
+Total: 0.472697 ms (FindLiveObjects: 0.066105 ms CreateObjectMapping: 0.032599 ms MarkObjects: 0.279211 ms  DeleteObjects: 0.093875 ms)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.237012 ms
+System memory in use before: 29.5 MB.
+System memory in use after: 29.5 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 483.
+Total: 0.498958 ms (FindLiveObjects: 0.039240 ms CreateObjectMapping: 0.026260 ms MarkObjects: 0.232122 ms  DeleteObjects: 0.200126 ms)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:31)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 31)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:42)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 42)
+
+Player Respawned
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<RespawnPlayerCo>c__Iterator0:MoveNext() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:49)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 49)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_transform ()
+  at LevelManager+<RespawnPlayerCo>c__Iterator0.MoveNext () [0x000c9] in C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelManager.cs:51 
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelManager.cs Line: 51)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.038063 ms
+System memory in use before: 29.6 MB.
+System memory in use after: 29.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 773.
+Total: 0.369162 ms (FindLiveObjects: 0.043768 ms CreateObjectMapping: 0.022940 ms MarkObjects: 0.206767 ms  DeleteObjects: 0.094781 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.063418 ms
+System memory in use before: 29.5 MB.
+System memory in use after: 29.5 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 773.
+Total: 0.308189 ms (FindLiveObjects: 0.060671 ms CreateObjectMapping: 0.028373 ms MarkObjects: 0.211597 ms  DeleteObjects: 0.006942 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.054966 ms
+System memory in use before: 29.5 MB.
+System memory in use after: 29.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 766.
+Total: 0.403875 ms (FindLiveObjects: 0.049201 ms CreateObjectMapping: 0.022638 ms MarkObjects: 0.230311 ms  DeleteObjects: 0.100214 ms)
+
+All save slots are set to 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+for_Terry:Update() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\for_Terry.cs:27)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/for_Terry.cs Line: 27)
+
+slot 1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SaveLoadManager:Update() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\SaveLoadManager.cs:30)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/SaveLoadManager.cs Line: 30)
+
+Hit :)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+SaveLoadManager:NewSlot(Int32) (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\SaveLoadManager.cs:99)
+SaveLoadManager:Update() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\SaveLoadManager.cs:36)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/SaveLoadManager.cs Line: 99)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.922454 ms
+System memory in use before: 29.4 MB.
+System memory in use after: 29.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 486.
+Total: 0.285248 ms (FindLiveObjects: 0.032297 ms CreateObjectMapping: 0.022035 ms MarkObjects: 0.214313 ms  DeleteObjects: 0.015696 ms)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:31)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 31)
+
+Level Two Accessible
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LevelLoader:Start() (at C:\Users\jared.ramey\Documents\Mario_DeMake_v2\Assets\Scripts\LevelLoader.cs:42)
+ 
+(Filename: C:/Users/jared.ramey/Documents/Mario_DeMake_v2/Assets/Scripts/LevelLoader.cs Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.928491 ms
+System memory in use before: 30.3 MB.
+System memory in use after: 30.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2997.
+Total: 0.821334 ms (FindLiveObjects: 0.141869 ms CreateObjectMapping: 0.068218 ms MarkObjects: 0.503788 ms  DeleteObjects: 0.106553 ms)
+
