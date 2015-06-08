@@ -1094,7 +1094,7 @@ Transform:
   - {fileID: 964856351}
   - {fileID: 665041533}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &278590381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 491285190}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18bbcf9ecc0f5ff47b11705dda009a11, type: 3}
   m_Name: 
@@ -2898,7 +2898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!4 &779864798
 Transform:
   m_PrefabParentObject: {fileID: 432754, guid: b15b296997d797a41bda041bc5bb09ad, type: 2}
