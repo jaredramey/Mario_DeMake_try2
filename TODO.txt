@@ -1,0 +1,23 @@
+Notes on Super Space Butts:
+
+General:
+	- Enemies
+		-> Fly enemy needs hitbox update to actually make him a threat
+	
+	- User Interface
+		-> Add suicide Button
+		-> Add quite level key (escape)
+
+On level one:
+	- Redo level start
+		-> Might just redo the entire level
+
+	- Weird wall glitch on starting wall before hole
+
+
+Boss:
+	- Fix camera
+		-> Show whole boss level and not just a fraction of it
+
+	- Give better visual que
+		-> Would still like to do something w/ lighting effects
