@@ -21,3 +21,7 @@ Boss:
 
 	- Give better visual que
 		-> Would still like to do something w/ lighting effects
+
+	- Change method to kill him (?)
+		-> Have to jump off of him in order to get to platforms
+		   When you get to the platforms you have to push spikes off and onto him (?)
