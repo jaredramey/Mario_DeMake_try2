@@ -73,6 +73,7 @@ public class BossController : MonoBehaviour
         }
 
         //Move left or right
+        //Flips the boss' sprite to face the right way
         if (moveRight)
         {
             transform.localScale = new Vector3(-4.6f, 4f, 1f);
@@ -85,7 +86,7 @@ public class BossController : MonoBehaviour
 
     void KillEnemy()
     {
-        //check if tthe boss is dead
+        //check if the boss is dead
         if (playerOnTop && health <= 0)
         {
             Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);
@@ -95,8 +96,21 @@ public class BossController : MonoBehaviour
         //else push the player up
         else if(playerOnTop)
         {
+            Vector2 maxVel = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
+
+            //Lower the boss health
             health = health - 1;
-            player.GetComponent<Rigidbody2D>().velocity += new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
+
+            //check to make sure that players velocity doesn't go too high when pushing player up
+            if(player.GetComponent<Rigidbody2D>().velocity.y < maxVel.y)
+            {
+                player.GetComponent<Rigidbody2D>().velocity += new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
+            }
+            else 
+            {
+                player.GetComponent<Rigidbody2D>().velocity += new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, player.GetComponent<Rigidbody2D>().velocity.y); ;
+            }
+            
         }
 
         //Set the bool in the animator so the attack animation can trigger
