@@ -100,7 +100,10 @@ public class BossController : MonoBehaviour
             Vector2 maxVel = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
 
             //Lower the boss health
-            health = health - 1;
+            /*
+             * Commenting out boss damage for testing purposes
+             */
+            //health = health - 1;
 
             //check to make sure that players velocity doesn't go too high when pushing player up
             if(player.GetComponent<Rigidbody2D>().velocity.y < maxVel.y)
@@ -109,7 +112,7 @@ public class BossController : MonoBehaviour
             }
             else 
             {
-                player.GetComponent<Rigidbody2D>().velocity += new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, player.GetComponent<Rigidbody2D>().velocity.y); ;
+                player.GetComponent<Rigidbody2D>().velocity += new Vector2(0, 0);
             }
             
         }
