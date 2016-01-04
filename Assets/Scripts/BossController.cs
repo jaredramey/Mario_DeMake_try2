@@ -96,6 +96,7 @@ public class BossController : MonoBehaviour
         //else push the player up
         else if(playerOnTop)
         {
+            //Setting the max velocity that the player can go
             Vector2 maxVel = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
 
             //Lower the boss health
