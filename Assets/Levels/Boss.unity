@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 30308064}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: PlayerCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2663371497217273435, guid: 0000000000000000d000000000000000, type: 0}
@@ -1427,7 +1427,7 @@ GameObject:
   - 4: {fileID: 710821950}
   - 212: {fileID: 710821952}
   - 114: {fileID: 710821951}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: leverMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ Transform:
   m_Children:
   - {fileID: 30308064}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!114 &710821951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1459,12 +1459,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToSpawn: {fileID: 131286, guid: 0a59079ca15281b4cae753c870a1f2a9, type: 2}
-  playerCheckRadius: 0
-  playerCheck: {fileID: 0}
+  playerCheckRadius: 1
+  playerCheck: {fileID: 30308064}
   whatIsPlayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   itemIsSpawned: 0
+  spawnOnTop: 0
+  spawnX: -2.67000008
+  spawnY: 8.98999977
+  spawnZ: 0
 --- !u!212 &710821952
 SpriteRenderer:
   m_ObjectHideFlags: 0

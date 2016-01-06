@@ -17,6 +17,8 @@ public class ItemSpawner : MonoBehaviour
 
     //See if an object was already spawned
     public bool itemIsSpawned = false;
+    public bool spawnOnTop;
+    public float spawnX, spawnY, spawnZ;
 
 
     // Use this for initialization
@@ -32,19 +34,28 @@ public class ItemSpawner : MonoBehaviour
         //check if the player is hitting
         playerHitting = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
         //update the animator
-        animator.SetBool("itemIsSpawned", itemIsSpawned);
+        //animator.SetBool("itemIsSpawned", itemIsSpawned);
         //spawn the item
         SpawnItem();
     }
 
     void SpawnItem()
     {
-        if(playerHitting && itemIsSpawned == false)
+        //if spawning below block
+        if(playerHitting && itemIsSpawned == false && spawnOnTop == true)
         {
             //create the item above the block
             Instantiate(itemToSpawn, (gameObject.transform.position + new Vector3(0f, 1f, 0f)), gameObject.transform.rotation);
             //make it so no other items can spawn out of the block
             itemIsSpawned = true;
+        }
+
+        //is spawning at custom location
+        else if(playerHitting && itemIsSpawned == false && spawnOnTop == false)
+        {
+            Vector3 spawnVector = new Vector3(spawnX, spawnY, spawnZ);
+
+            Instantiate(itemToSpawn, spawnVector, gameObject.transform.rotation);
         }
     }
 }
