@@ -17,6 +17,8 @@ public class ItemSpawner : MonoBehaviour
 
     //See if an object was already spawned
     public bool itemIsSpawned = false;
+
+    //Set where the item is supposed to spawn
     public bool spawnOnTop;
     public float spawnX, spawnY, spawnZ;
 
@@ -26,6 +28,7 @@ public class ItemSpawner : MonoBehaviour
     {
         //get the animator
         animator = GetComponent<Animator>();
+        print(itemToSpawn.name+"(Clone)");
     }
 
     // Update is called once per frame
@@ -35,8 +38,15 @@ public class ItemSpawner : MonoBehaviour
         playerHitting = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
         //update the animator
         //animator.SetBool("itemIsSpawned", itemIsSpawned);
+
+        /*TODO: Add a check to see if item has despawned or not*/
+        CheckForItem();
+
         //spawn the item
-        SpawnItem();
+        if (itemIsSpawned == false)
+        {
+            SpawnItem();
+        }
     }
 
     void SpawnItem()
@@ -57,5 +67,18 @@ public class ItemSpawner : MonoBehaviour
 
             Instantiate(itemToSpawn, spawnVector, gameObject.transform.rotation);
         }
+    }
+
+    void CheckForItem()
+    {
+        if (GameObject.Find(itemToSpawn.name+"(Clone)"))
+        {
+            itemIsSpawned = true;
+        }
+        else
+        {
+            itemIsSpawned = false;
+        }
+
     }
 }
