@@ -3,21 +3,27 @@ using System.Collections;
 
 public class BossController : MonoBehaviour
 {
-
+    //Stuff for the boss
     public float moveSpeed;
     public bool moveRight;
     public GameObject DeathParticle;
     public int health;
+    public Animator anim;
+
+    //Stuff for the player
     public float pushVelocity;
     private GameObject player;
-
     public float playerCheckRadius;
     public bool playerOnTop;
     public Transform playerCheck;
     public LayerMask whatIsPlayer;
 
-
-    public Animator anim;
+    //Stuff for the weight
+    public GameObject weight;
+    public bool hitByWeight;
+    public LayerMask whatIsWeight;
+    public float weightCheckRadius;
+    /*== Will be using player check for transform check*/
 
     // Use this for initialization
     void Start()
@@ -31,15 +37,15 @@ public class BossController : MonoBehaviour
     {
         //Get Player Object
         player = GameObject.Find("Player");
-
-        //checking for player
+        //checking for player & for weight
         playerOnTop = Physics2D.OverlapCircle(playerCheck.position, playerCheckRadius, whatIsPlayer);
-
+        hitByWeight = Physics2D.OverlapCircle(playerCheck.position, weightCheckRadius, whatIsWeight);
         //Move
         Movement();
-
-        //check and see if death is needed
+        //check and see if hitting player
         KillEnemy();
+        //check to see if hit by weight
+        WeightCheck();
     }
 
     void Movement()
@@ -86,24 +92,11 @@ public class BossController : MonoBehaviour
 
     void KillEnemy()
     {
-        //check if the boss is dead
-        if (playerOnTop && health <= 0)
-        {
-            Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);
-            Destroy(gameObject);
-            return;
-        }
         //else push the player up
-        else if(playerOnTop)
+        if(playerOnTop)
         {
             //Setting the max velocity that the player can go
             Vector2 maxVel = new Vector2(player.GetComponent<Rigidbody2D>().velocity.x, pushVelocity);
-
-            //Lower the boss health
-            /*
-             * Commenting out boss damage for testing purposes
-             */
-            //health = health - 1;
 
             //check to make sure that players velocity doesn't go too high when pushing player up
             if(player.GetComponent<Rigidbody2D>().velocity.y < maxVel.y)
@@ -119,5 +112,21 @@ public class BossController : MonoBehaviour
 
         //Set the bool in the animator so the attack animation can trigger
         anim.SetBool("PlayerOnTop", playerOnTop);
+    }
+
+    void WeightCheck()
+    {
+        //check if the boss is dead
+        if (hitByWeight && health <= 0)
+        {
+            Instantiate(DeathParticle, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(gameObject);
+            return;
+        }
+
+        else if(hitByWeight)
+        {
+            health--;
+        }
     }
 }
