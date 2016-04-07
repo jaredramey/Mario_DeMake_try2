@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
-
+    
     private GameObject LadyKiller;
     public string LevelToLoad;
 
@@ -24,7 +25,8 @@ public class EndGame : MonoBehaviour
         if(other.name == "Player" && LadyKiller == null)
         {
             //Should load into end game screen
-            Application.LoadLevel(LevelToLoad);
+            //Depreciated Code:Application.LoadLevel(LevelToLoad);
+            SceneManager.LoadScene(LevelToLoad);
         }
     }
 }

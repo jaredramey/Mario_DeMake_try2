@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -65,10 +66,10 @@ public class LevelLoader : MonoBehaviour
             if(levelToLoad == "Quit")
             {
                 Application.Quit();
-                Debug.Log("You just lost the game");
             }
             ChangeLevelAvailability();
-            Application.LoadLevel(levelToLoad);
+            //Application.LoadLevel(levelToLoad);
+            SceneManager.LoadScene(levelToLoad);
         }
     }
 

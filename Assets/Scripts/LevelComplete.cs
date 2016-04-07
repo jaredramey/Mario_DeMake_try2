@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class LevelComplete : MonoBehaviour
         {
             //--checking if current level needs to be increased--
             //if loaded level is level one
-            if (Application.loadedLevelName == "Level_One")
+            if (SceneManager.GetActiveScene().name == "Level_One")
             {
                 //if player makes it back without dying (lifeTotal > 0)
                 //if he hasnt already beaten this level increase the finished levels
@@ -37,7 +38,7 @@ public class LevelComplete : MonoBehaviour
                 }
             }
             //if loaded level is level two
-            if (Application.loadedLevelName == "Level_Two")
+            if (SceneManager.GetActiveScene().name == "Level_Two")
             {
                 //if player makes it back without dying (lifeTotal > 0)
                 //if he hasnt already beaten this level increase the finished levels
@@ -52,7 +53,7 @@ public class LevelComplete : MonoBehaviour
                 }
             }
             //if loaded level is level three
-            if (Application.loadedLevelName == "Level_Three")
+            if (SceneManager.GetActiveScene().name == "Level_Three")
             {
                 //if player makes it back without dying (lifeTotal > 0)
                 //if he hasnt already beaten this level increase the finished levels

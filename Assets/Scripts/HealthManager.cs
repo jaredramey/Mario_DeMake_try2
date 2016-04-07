@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -39,7 +40,8 @@ public class HealthManager : MonoBehaviour
             //Return the player to the world map
             lifeTotal = 0;
             //load back into world menu
-            Application.LoadLevel("LevelSelector");
+            //Application.LoadLevel("LevelSelector");
+            SceneManager.LoadScene("LevelSelector");
         }
 
         //update text on screen
